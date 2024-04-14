@@ -21,30 +21,32 @@ Abaixo, apresento uma breve descrição desses problemas.
 - Resolução do problema por meio do solver HiGHS, da linguagem Julia.
 - Apresentação do resultado de valor ótimo, para a entrada especificada.
 
-OBS: os detalhes da formatação do arquivo de entrada encontram-se em Documentacao.pdf
+OBS: os detalhes da formatação do arquivo de entrada seguem ao modelo dos exemplos disponíveis. Note que a separação dos valores ocorre por tabulação ('\t').
 
 ## Como usar
 1. Problema de Empacotamento
 ```bash
-julia Problema_de_Empacotamento/empacotamento.jl Problema_de_Empacotamento/Exemplos/Entradas/<entrada.txt>
+julia Empacotamento/empacotamento.jl Empacotamento/Exemplos/Entradas/<entrada.txt>
 ```
 
 2. Problema de Clique Máxima
 ```bash
-julia Problema_de_Clique_Máxima/cliquemaxima.jl Problema_de_Clique_Máxima/Exemplos/Entradas/<entrada.txt>
+julia Clique_Maxima/cliquemaxima.jl Clique_Maxima/Exemplos/Entradas/<entrada.txt>
 ```
 
 3. Problema de Lotsizing com Backlog
 ```bash
-julia Problema_de_Lotsizing/lotsizing.jl Problema_de_Lotsizing/Exemplos/Entradas/<entrada.txt>
+julia Lotsizing/lotsizing.jl Lotsizing/Exemplos/Entradas/<entrada.txt>
 ```
 
 4. Problema de Coloração
 ```bash
-julia Problema_de_Coloracao/coloracao.jl Problema_de_Coloracao/Exemplos/Entradas/<entrada.txt>
+julia Coloracao/coloracao.jl Coloracao/Exemplos/Entradas/<entrada.txt>
 ```
 
 5. Problema de A-Coloração
 ```bash
-julia Problema_de_A_Coloracao/Acoloracao.jl Problema_de_A_Coloracao/Exemplos/Entradas/<entrada.txt>
+julia A_Coloracao/Acoloracao.jl A_Coloracao/Exemplos/Entradas/<entrada.txt>
 ```
+
+OBS: O valor ótimo para cada instância, juntamente com uma possível atribuição de valores para as variáveis de decisão correspondentes, estão disponíveis na pasta Exemplos/Saidas de cada problema respectivo. A saída do programa em si é direcionada para a saída padrão.
