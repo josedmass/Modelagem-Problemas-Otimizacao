@@ -1,5 +1,11 @@
 # Modelagem-Problemas-Otimizacao
-Modelagem de 5 problemas de otimização envolvendo programação linear e inteira para o Trabalho Prático 1 da disciplina de Pesquisa Operacional da UFMG, em 2024/01. Abaixo, apresento uma breve descrição desses problemas.
+Modelagem de 5 problemas de otimização envolvendo programação linear e inteira para o Trabalho Prático 1 da disciplina de Pesquisa Operacional da UFMG, em 2024/01. 
+
+## Autor
+- José Eduardo Duarte Massucato
+
+## Descrição
+Abaixo, apresento uma breve descrição desses problemas.
 
 1. **Problema de Empacotamento:** Considere um conjunto de objetos $O = \{o_1, o_2, ..., o_n\}$ cada qual com um peso $w_i$. Dispomos de várias caixas de papel, cada uma delas com o limite de peso 20kg. Desejamos empacotar nossos objetos, utilizando o menor número de caixas possível, dado que em nenhuma caixa o valor da soma dos pesos dos objetos ultrapasse seu limite de peso.
 
@@ -10,3 +16,35 @@ Modelagem de 5 problemas de otimização envolvendo programação linear e intei
 4. **Problema de Coloração:** Dado um grafo $G = (V, E)$, uma coloração própria é uma atribuição de cores aos vértices do grafo de tal forma que os vértices adjacentes recebem cores diferentes. Desejamos determinar o menor número de cores necessárias para colorir de maneira própria um grafo dado de entrada.
 
 5. **Problema de A-Coloração:** Dado um grafo $G = (V, E)$, temos, além da coloração própria do grafo, a propriedade de que para cada conjunto de vértices coloridos com a cor $i$ temos na vizinhança combinada desses vértices todas as demais cores, ou seja, se $C_i \subseteq V(G)$ é o conjunto dos vértices que receberam a cor $i$, temos que para toda cor $i$, $N(C_i) \cap C_j \neq \emptyset$ para toda cor $j$, com $j \neq i$. Diremos então que a coloração é uma A-coloração. Desejamos determinar o maior número de cores possíveis para se colorir de maneira própria um grafo dado de entrada e garantir que a coloração obtida é uma A-coloração.
+
+## Funcionalidades
+- Resolução do problema por meio do solver HiGHS, da linguagem Julia.
+- Apresentação do resultado de valor ótimo, para a entrada especificada.
+
+OBS: os detalhes da formatação do arquivo de entrada encontram-se em Documentacao.pdf
+
+## Como usar
+1. Problema de Empacotamento
+'''bash
+julia Problema_de_Empacotamento/empacotamento.jl Problema_de_Empacotamento/Exemplos/Entradas/<entrada.txt>
+'''
+
+2. Problema de Clique Máxima
+'''bash
+julia Problema_de_Clique_Máxima/cliquemaxima.jl Problema_de_Clique_Máxima/Exemplos/Entradas/<entrada.txt>
+'''
+
+3. Problema de Lotsizing com Backlog
+'''bash
+julia Problema_de_Lotsizing/lotsizing.jl Problema_de_Lotsizing/Exemplos/Entradas/<entrada.txt>
+'''
+
+4. Problema de Coloração
+'''bash
+julia Problema_de_Coloracao/coloracao.jl Problema_de_Coloracao/Exemplos/Entradas/<entrada.txt>
+'''
+
+5. Problema de A-Coloração
+'''bash
+julia Problema_de_A_Coloracao/Acoloracao.jl Problema_de_A_Coloracao/Exemplos/Entradas/<entrada.txt>
+'''
