@@ -25,26 +25,26 @@ OBS: os detalhes da formatação do arquivo de entrada encontram-se em Documenta
 
 ## Como usar
 1. Problema de Empacotamento
-'''bash
+```bash
 julia Problema_de_Empacotamento/empacotamento.jl Problema_de_Empacotamento/Exemplos/Entradas/<entrada.txt>
-'''
+```
 
 2. Problema de Clique Máxima
-'''bash
+```bash
 julia Problema_de_Clique_Máxima/cliquemaxima.jl Problema_de_Clique_Máxima/Exemplos/Entradas/<entrada.txt>
-'''
+```
 
 3. Problema de Lotsizing com Backlog
-'''bash
+```bash
 julia Problema_de_Lotsizing/lotsizing.jl Problema_de_Lotsizing/Exemplos/Entradas/<entrada.txt>
-'''
+```
 
 4. Problema de Coloração
-'''bash
+```bash
 julia Problema_de_Coloracao/coloracao.jl Problema_de_Coloracao/Exemplos/Entradas/<entrada.txt>
-'''
+```
 
 5. Problema de A-Coloração
-'''bash
+```bash
 julia Problema_de_A_Coloracao/Acoloracao.jl Problema_de_A_Coloracao/Exemplos/Entradas/<entrada.txt>
-'''
+```
