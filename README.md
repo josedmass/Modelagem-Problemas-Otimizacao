@@ -7,7 +7,7 @@ Modelagem de 5 problemas de otimização envolvendo programação linear e intei
 ## Descrição
 Abaixo, apresento uma breve descrição desses problemas.
 
-1. **Problema de Empacotamento:** Considere um conjunto de objetos $O = {\{o_1, o_2, ..., o_n\}}$ cada qual com um peso $w_i$. Dispomos de várias caixas de papel, cada uma delas com o limite de peso 20kg. Desejamos empacotar nossos objetos, utilizando o menor número de caixas possível, dado que em nenhuma caixa o valor da soma dos pesos dos objetos ultrapasse seu limite de peso.
+1. **Problema de Empacotamento:** Considere um conjunto de objetos $O = {o_1, o_2, ..., o_n}$ cada qual com um peso $w_i$. Dispomos de várias caixas de papel, cada uma delas com o limite de peso 20kg. Desejamos empacotar nossos objetos, utilizando o menor número de caixas possível, dado que em nenhuma caixa o valor da soma dos pesos dos objetos ultrapasse seu limite de peso.
 
 2. **Problema de Clique Máxima:** Dado um grafo $G = (V, E)$, uma clique é um conjunto de vértices dois a dois adjacentes, ou seja, com arestas entre eles. Desejamos determinar um subgrafo induzido que seja uma clique de cardinalidade máxima (maior tamanho em número de vértices).
 
