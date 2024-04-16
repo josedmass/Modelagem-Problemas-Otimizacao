@@ -14,7 +14,7 @@ function readData(file)
 	c = []
 	h = []
 	d = []
-    p = []
+    	p = []
 	for l in eachline(file)
 		q = split(l, '\t')
 		num = parse(Int64, q[2])
